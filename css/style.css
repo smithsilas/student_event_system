@@ -1,0 +1,182 @@
+/* =========================================================
+   Macmillan College Events — custom styles
+   Palette: deep campus navy + warm brass accent
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --navy: #0F4C4C;
+    --navy-dark: #0A3838;
+    --brass: #E0674A;
+    --brass-light: #EF9179;
+    --paper: #F4F7F6;
+    --ink: #1E2B2A;
+    --line: #DAE4E2;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+}
+
+h1, h2, h3, h4, .brand-font {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--navy);
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+.navbar-brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--brass-light) !important;
+}
+.navbar-nav .nav-link {
+    color: #D9DEEA;
+    font-weight: 500;
+    margin-left: .5rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--brass-light);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+    color: #fff;
+    padding: 5rem 0 6rem;
+}
+.hero h1 {
+    color: #fff;
+    font-size: 2.75rem;
+    max-width: 620px;
+}
+.hero p.lead {
+    color: #C6CCDA;
+    max-width: 520px;
+}
+.hero .btn-brass {
+    background: var(--brass);
+    border: none;
+    color: #1B2A4A;
+    font-weight: 600;
+    padding: .65rem 1.6rem;
+}
+.hero .btn-brass:hover {
+    background: var(--brass-light);
+    color: var(--navy-dark);
+}
+
+/* Section spacing */
+.section {
+    padding: 3.5rem 0;
+}
+
+/* Event cards */
+.event-card {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
+    height: 100%;
+    transition: box-shadow .15s ease, transform .15s ease;
+}
+.event-card:hover {
+    box-shadow: 0 8px 24px rgba(27,42,74,.12);
+    transform: translateY(-3px);
+}
+.event-card .event-img {
+    height: 170px;
+    background: var(--navy);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brass-light);
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+}
+.event-card .event-date-badge {
+    display: inline-block;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    color: var(--navy);
+    font-weight: 600;
+    font-size: .8rem;
+    padding: .25rem .6rem;
+    border-radius: 4px;
+}
+.event-card .card-body {
+    padding: 1.25rem;
+}
+
+/* Forms */
+.form-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 2rem;
+}
+.form-label {
+    font-weight: 500;
+    color: var(--navy);
+}
+.btn-primary {
+    background: var(--navy);
+    border-color: var(--navy);
+    font-weight: 500;
+}
+.btn-primary:hover {
+    background: var(--navy-dark);
+    border-color: var(--navy-dark);
+}
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #C0392B;
+}
+
+/* Records table */
+.records-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+table.table thead {
+    background: var(--navy);
+    color: #fff;
+}
+.stat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    background: var(--navy);
+    color: #fff;
+    padding: .4rem 1rem;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.stat-pill .count {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--brass-light);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--navy);
+    color: #B7BECF;
+}
+
+/* Utility */
+.text-brass { color: var(--brass); }
